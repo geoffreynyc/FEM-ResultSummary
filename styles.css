@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+h2 {
+  color: hsl(241, 100%, 89%);
+  font-size: 1rem;
+  padding-top: 1rem;
+  font-weight: 500;
+}
+
+h3 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+h4 {
+  color: hsl(224, 30%, 27%);
+  font-weight: 900;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: hsl(241, 100%, 89%);
+  max-width: 250px;
+  margin: auto;
+  font-size: 1rem;
+}
+
+img {
+  vertical-align: text-bottom;
+  margin-right: 0.5rem;
+}
+
+.hero h2,
+.hero .hero-circle,
+.hero h3,
+.hero p {
+  margin-bottom: 1rem;
+}
+
+.hero {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  height: 45vh;
+  border-radius: 0px 0px 25px 25px;
+  text-align: center;
+}
+
+.hero-circle-header {
+  color: white;
+  font-weight: 900;
+  font-size: 3.5rem;
+  padding-top: 1.5rem;
+}
+
+.hero-circle {
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  margin: auto;
+  font-size: 0.9rem;
+  color: hsl(241, 71%, 73%);
+  font-weight: 700;
+}
+
+.summary {
+  padding: 1.5rem;
+}
+
+.summary-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.reaction-title {
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.memory-title {
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.verbal-title {
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.visual-title {
+  color: hsl(234, 85%, 45%);
+}
+
+.numerator {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+
+button {
+  margin-top: 0.8rem;
+  border-style: none;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  font-family: "Hanken Grotesk", sans-serif;
+  padding: 1rem 8.2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+  display: flex;
+  justify-content: flex-start;
+  color: hsla(241, 21%, 62%, 0.705);
+}
+
+.reaction > *:first-child,
+.memory > *:first-child,
+.verbal > *:first-child,
+.visual > *:first-child {
+  margin-right: 0.5rem;
+}
+
+.reaction > *:last-child,
+.memory > *:last-child,
+.verbal > *:last-child,
+.visual > *:last-child {
+  margin-left: auto;
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero {
+    border-radius: 19px;
+    height: 500px;
+    width: 400px;
+  }
+
+  .hero-circle {
+    height: 200px;
+    width: 200px;
+  }
+
+  .hero-circle-header {
+    font-size: 5rem;
+    padding-top: 2rem;
+  }
+
+  h2 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+
+  .summary {
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 19px;
+    padding: 2rem;
+  }
+
+  .summary-rows {
+    gap: 1.5rem;
+  }
+}
